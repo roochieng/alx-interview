@@ -17,6 +17,9 @@ The N queens puzzle is the challenge of placing N non-attacking queens on an N×
 - You are only allowed to import the sys module
 
 
+
+Read: [Queen](https://en.wikipedia.org/wiki/Queen_%28chess%29), [Backtracking](https://en.wikipedia.org/wiki/Backtracking)
+
 # Requirements
 ### General
 - Allowed editors: vi, vim, emacs
