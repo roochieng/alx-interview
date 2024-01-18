@@ -20,7 +20,7 @@ if __name__ == '__main__':
         exit(1)
 
     solutions = []
-    placed_queens = []  # coordinates format [row, column]
+    placed_queens = []
     stop = False
     r = 0
     c = 0
@@ -69,13 +69,11 @@ if __name__ == '__main__':
             break
         if stop:
             break
-        # on fail: go back to previous row
-        # and continue from last safe column + 1
         if goback:
             r -= 1
             while r >= 0:
                 c = placed_queens[r][1] + 1
-                del placed_queens[r]  # delete previous queen coordinates
+                del placed_queens[r]
                 if c < n:
                     break
                 r -= 1
